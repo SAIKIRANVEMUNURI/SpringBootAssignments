@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans 
+  http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context 
+  http://www.springframework.org/schema/context/spring-context.xsd">
+  
+  <context:annotation-config/>
+
+  <bean id="emp" class="Lab1.Employee">
+  <property name="empmId" value="120"></property>
+  <property name="empName" value="Saiteja"></property>
+  <property name="empSal" value="10000000"></property>
+  <property name="empAge" value="23"></property>
+  </bean>
+  
+  <bean id="emp1" class="Lab1.Employee">
+   <property name="empmId" value="121"></property>
+  <property name="empName" value="Sai"></property>
+  <property name="empSal" value="20000000"></property>
+  <property name="empAge" value="24"></property>
+  </bean>  
+  
+  <bean id="sbu" class="Lab1.Sbu">
+  <property name="subId" value="116"></property>
+  <property name="subName" value="simha"></property>
+  <property name="sbuHead" value="sri"></property>
+  <property name="empList">
+  
+     
+  <list>  
+  <ref bean="emp"/>
+  <ref bean="emp1"/>
+  </list>
+  </property>
+  </bean>
+</beans>

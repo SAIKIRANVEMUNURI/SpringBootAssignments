@@ -1,0 +1,40 @@
+[
+    {
+      "id": 111,
+      "bookName": "java programming",
+      "cost": 4000,
+      "author": "James Gosling"
+    },
+   
+    {
+      "id": 112,
+      "bookName": "c programming",
+      "cost": 2000,
+      "author": "charles"
+    },
+    {
+      "id": 113,
+      "bookName": "cpp programming",
+      "cost": 3000,
+      "author": "James cameron"
+    },
+    {
+      "id": 114,
+      "bookName": "php programming",
+      "cost": 1000,
+      "author": "fleming"
+    },
+    {
+      "id": 115,
+      "bookName": "sql programming",
+      "cost": 4500,
+      "author": "Jhonson"
+    },
+    {
+      "id": 116,
+      "bookName": "cloud programming",
+      "cost": 8000,
+      "author": "warner"
+    }
+    
+  ]

@@ -1,0 +1,34 @@
+<section class="col-md-10 mx-auto mt-4">
+
+  <form #frm="ngForm" (ngSubmit)="addTrainer()">
+    
+    <div class="mt-3">Trainee Id</div>
+    <div><input type="number" name="txttitle" [(ngModel)]="trainee.traineeId" class="form-control" #bookname="ngModel"
+        required /></div>
+    <div class="alert alert-dark mt-3" *ngIf="bookname.invalid && (bookname.touched || bookname.dirty)">Trainer Id  is
+      required.</div>
+
+    <div class="mt-3">Trainee Name</div>
+    <div><input type="text" name="txtcost" [(ngModel)]="trainee.traineeName" class="form-control" #bookcost="ngModel"
+        required /></div>
+    <div class="alert alert-dark mt-3" *ngIf="bookcost.invalid && (bookcost.touched || bookcost.dirty)">Trainer Name is
+      required.</div>
+
+    <div class="mt-3">Trainer Domain</div>
+    <div><input type="text" name="txtauthor" [(ngModel)]="trainee.traineeDomain" class="form-control" #bookauthor="ngModel"
+        required /></div>
+    <div class="alert alert-dark mt-3" *ngIf="bookauthor.invalid && (bookauthor.touched || bookauthor.dirty)">Book
+      Trainer Domain is required</div>
+
+    <div class="mt-3">Trainer Location</div>
+    <div><input type="text" name="txtlocation" [(ngModel)]="trainee.traineeLocation" class="form-control" #bookauthor="ngModel"
+        required /></div>
+    <div class="alert alert-dark mt-3" *ngIf="bookauthor.invalid && (bookauthor.touched || bookauthor.dirty)">Book
+      Trainer Location is is required</div>
+
+    <div class="mt-3"><input type="submit" [disabled]="!frm.valid" class="btn btn-dark" /></div>
+  </form>
+</section>
+
+
+

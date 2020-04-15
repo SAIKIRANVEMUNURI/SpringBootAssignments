@@ -1,0 +1,17 @@
+<table class="col-md-10 mx-auto table table-striped table-hover table-bordered mt-4" *ngIf="!editFlag">
+  <tr>
+    <th>TRAINEE ID</th>
+    <th>TRAINEE NAME</th>
+    <th>TraineeDomain</th>
+    <th>Trainee Location</th>
+    <th>DELETE BOOK</th>
+  </tr>
+  <tr *ngFor="let trainer of trainee">
+    <td>{{trainer.traineeId}}</td>
+    <td>{{trainer.traineeName}}</td>
+    <td>{{trainer.traineeDomain}}</td>
+    <td>{{trainer.traineeLocation}}</td>
+    <td><a class="btn btn-dark text-white" (click)="removeTrainer(trainer.traineeId)">Delete</a></td>
+  </tr>
+</table>
+
